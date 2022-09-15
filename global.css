@@ -1,3 +1,131 @@
+/*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
+/* github.com/csstools/sanitize.css */
+// Blocks
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+// Headings
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+code,
+kbd,
+samp,
+pre {
+  font-family:
+    ui-monospace,
+    /* macOS 10.10+ */ "Menlo",
+    /* Windows 6+ */ "Consolas",
+    /* Android 4+ */ "Roboto Mono",
+    /* Ubuntu 10.10+ */ "Ubuntu Monospace",
+    /* KDE Plasma 5+ */ "Noto Mono",
+    /* KDE Plasma 4+ */ "Oxygen Mono",
+    /* Linux/OpenOffice fallback */ "Liberation Mono",
+    /* fallback */ monospace,
+    /* macOS emoji */ "Apple Color Emoji",
+    /* Windows emoji */ "Segoe UI Emoji",
+    /* Windows emoji */ "Segoe UI Symbol",
+    /* Linux emoji */ "Noto Color Emoji";
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
+hr {
+  border-style: solid;
+  border-width: 1px 0 0;
+  color: inherit;
+  height: 0;
+  overflow: visible;
+}
+
+// List
+ul {
+  list-style: none;
+}
+
+// Form
+button,
+input,
+select {
+  margin: 0;
+}
+
+// Box sizing
+html {
+  box-sizing: border-box;
+  line-sizing: normal;
+}
+
+[hidden] {
+  display: none;
+}
+
+* {
+  &,
+  &::before,
+  &::after {
+    box-sizing: inherit;
+}
+
+// Media
+img,
+video,
+iframe,
+input,
+select,
+textarea {
+  height: auto;
+  max-width: 100%;
+}
+
+// Iframe
+iframe {
+  border: 0;
+}
+
+// Table
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
 .avatar {
   position: relative; 
 }
