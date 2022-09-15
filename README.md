@@ -1,1 +1,1 @@
-# config-files
+# Frontend Development Starter and Configuration Files
