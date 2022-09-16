@@ -50,6 +50,11 @@ html {
 	box-sizing: border-box;
 }
 
+body {
+	min-height: 100vh;
+	position: relative;
+}
+
 :where(h1, h2, h3, h4, h5, h6) {
 	font-weight: normal;
 }
@@ -235,3 +240,38 @@ html {
 	clip: rect(0, 0, 0, 0);
 	position: absolute;
 }
+
+/*
+*
+* Helpful Classes
+*
+*/
+
+.page-section-container {
+	--content-columns: 2fr;
+	--page-gap-size: 1fr;
+
+	display: grid;
+	grid-template-columns:
+		[full-start] var(--page-gap-size) [wrapper-start] var(--content-columns)
+		[wrapper-end] var(--page-gap-size) [full-end];
+}
+
+.center-children {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.img-avatar {
+	position: relative;
+}
+
+.img-avatar-border {
+	position: aboslute;
+	width: 100%;
+	height: 100%;
+	border: 2px solid #000;
+	opacity: 0.1;
+}
+	
