@@ -1,3 +1,5 @@
+let path = require("path");
+
 module.exports = {
 	reactStrictMode: true,
 	swcMinify: true,
@@ -7,6 +9,10 @@ module.exports = {
 			issuer: /\.[jt]sx?$/,
 			use: ["@svgr/webpack"],
 		});
+		config.resolve.alias = {
+			...config.resolve.alias,
+			components: path.resolve(__dirname, "components/"),
+		};
 
 		return config;
 	},
