@@ -5,8 +5,11 @@
 		"moduleResolution": "Node16",
 		"baseUrl": ".",
 		"paths": {
-			"components/*": ["./components/*"]
-		}
+			"components/*": ["src/components/*"],
+			"assets/*": ["src/assets/*"]
+		},
+		"strictNullChecks": true,
+		"strictFunctionTypes": true
 	},
 	"exclude": ["node_modules", "**/node_modules/*"]
 }
