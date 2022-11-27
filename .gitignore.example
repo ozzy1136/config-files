@@ -1,5 +1,3 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-
 # dependencies
 /node_modules
 /.pnp
@@ -20,6 +18,9 @@ dist-ssr
 # misc
 *.pem
 *.local
+*.sketch
+*.fig
+*.xd
 
 # Logs
 logs
@@ -49,3 +50,4 @@ lerna-debug.log*
 *.njsproj
 *.sln
 *.sw?
+.prettierignore
