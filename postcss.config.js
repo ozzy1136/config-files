@@ -1,3 +1,6 @@
+// If using CSS modules:
+// https://github.com/csstools/postcss-plugins/tree/main/plugins/postcss-custom-media#modular-css-processing
+
 const prod = process.env.NODE_ENV === "production";
 
 module.exports = {
